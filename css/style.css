@@ -553,3 +553,22 @@ main.about > section.about-site > .middle > .about-line > li.left a:hover{
     color: var(--color-black);
     background-color: var(--color-white);
 }
+/* ---------------------------------------| Articles page |------------------------------------------- */
+main.articles > section.title-articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right , rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/hero-site-2.png) no-repeat center center / cover fixed;
+    height: 350px;
+    color: var(--color-white);
+}
+main.articles > section.title-articles h1{
+    padding: 10px 10px;
+    font-size: var(--font-h1);
+}
+main.articles > section.title-articles div a{
+    padding: 10px 10px;
+    font-size: var(--font-p);
+    color: var(--color-white);
+}
