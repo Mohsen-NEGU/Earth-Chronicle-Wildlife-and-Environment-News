@@ -85,11 +85,12 @@ section.hero{
     background:linear-gradient(rgba(0, 0, 0, 0.35) ,rgba(0, 0, 0, 0.35)), url(../images/hero.png) no-repeat center 60% / cover fixed;
 }
 section.hero > .middle > .list-info{
-    display: grid;
-    grid-template-rows: 25px 65px 90px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: var(--color-white);
 }
-section.hero > .middle > .list-info > li a{
+section.hero > .middle > .list-info > a{
     font-size: var(--font-a-animal);
     background-color: var(--color-leopart);
     color: var(--color-white);
@@ -97,18 +98,18 @@ section.hero > .middle > .list-info > li a{
     border-radius: 50px;
     transition: 0.5s;
 }
-section.hero > .middle > .list-info > li a:hover{
+section.hero > .middle > .list-info > a:hover{
     background-color: var(--color-white);
     color: var(--color-leopart);
 }
-section.hero > .middle > .list-info > li h1{
+section.hero > .middle > .list-info > h1{
     font-size: var(--font-h1);
 }
-section.hero > .middle > .list-info > li p{
+section.hero > .middle > .list-info > p{
     width: 40%;
     font-size: var(--font-p);
 }
-section.hero > .middle > .list-info > li a.read-more{
+section.hero > .middle > .list-info > a.read-more{
     padding: 10px 20px;
     font-size: var(--font-p);
     background-color: var(--color-green-website);
@@ -397,7 +398,7 @@ footer > .middle >.copyright{
 }
 /* -----------------------------------------| Pages |---------------------------------------- */
 /* -----------------------------------------| index |---------------------------------------- */
-main.index > article > .middle > .index-news{
+main.index > section > .middle > .index-news{
     width: 100%;
     padding: 10px 0;
     display: grid;
@@ -405,38 +406,38 @@ main.index > article > .middle > .index-news{
     grid-gap: 20px;
     
 }
-main.index >article > .middle > h2{
+main.index >section > .middle > h2{
     font-size: var(--font-h2);
     padding: 5px 0;
 }
-main.index > article > .middle > .index-news > .card{
+main.index > section > .middle > .index-news > .card{
     padding: 15px;
     background-color: var(--color-white);
     border-radius: 5px;
     position: relative;
 }
-main.index > article > .middle > .index-news > .card:first-child{
+main.index > section > .middle > .index-news > .card:first-child{
     display: grid;
     grid-column: 1/3;
     grid-template-columns: repeat(2,1fr);
 }
-main.index > article > .middle > .index-news > .card:last-child{
+main.index > section > .middle > .index-news > .card:last-child{
     display: grid;
     grid-column: 2/4;
     grid-template-columns: repeat(2,1fr);
 }
 
-main.index > article > .middle > .index-news > .card img{
+main.index > section > .middle > .index-news > .card img{
     border-radius: 5px;
 }
-main.index > article > .middle > .index-news > .card > .article-content{
+main.index > section > .middle > .index-news > .card > .article-content{
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-main.index > article > .middle > .index-news > .card > .article-content > h3 > a::after{
+main.index > section > .middle > .index-news > .card > .article-content > h3 > a::after{
     content: '';
     position: absolute;
     top: 0;
@@ -446,36 +447,36 @@ main.index > article > .middle > .index-news > .card > .article-content > h3 > a
     background-color: var(--color-green-website);
     opacity: 0.03;
 }
-main.index > article > .middle > .index-news > .card > .article-content:nth-child(2),
-main.index > article > .middle > .index-news > .card > .article-content:nth-child(3),
-main.index > article > .middle > .index-news > .card > .article-content:nth-child(4),
-main.index > article > .middle > .index-news > .card > .article-content:nth-child(5),
-main.index > article > .middle > .index-news > .card > .article-content:nth-child(6){
+main.index > section > .middle > .index-news > .card > .article-content:nth-child(2),
+main.index > section > .middle > .index-news > .card > .article-content:nth-child(3),
+main.index > section > .middle > .index-news > .card > .article-content:nth-child(4),
+main.index > section > .middle > .index-news > .card > .article-content:nth-child(5),
+main.index > section > .middle > .index-news > .card > .article-content:nth-child(6){
     padding-top: 20px;
 }
-main.index > article > .middle > .index-news > .card:nth-child(2),
-main.index > article > .middle > .index-news > .card:nth-child(6){
+main.index > section > .middle > .index-news > .card:nth-child(2),
+main.index > section > .middle > .index-news > .card:nth-child(6){
     color: var(--color-white);
     background-color: var(--color-green-website);
 }
-main.index > article > .middle > .index-news > .card:nth-child(2){
+main.index > section > .middle > .index-news > .card:nth-child(2){
     background-color: var(--color-black);
 }
-main.index > article > .middle > .index-news > .card:nth-child(2) .h3-index,
-main.index > article > .middle > .index-news > .card:nth-child(6) .h3-index{
+main.index > section > .middle > .index-news > .card:nth-child(2) .h3-index,
+main.index > section > .middle > .index-news > .card:nth-child(6) .h3-index{
     padding: 15px 0;
 }
-main.index > article > .middle > .index-news > .card:nth-child(2) .h3-index > a ,
-main.index > article > .middle > .index-news > .card:nth-child(6) .h3-index > a{
+main.index > section > .middle > .index-news > .card:nth-child(2) .h3-index > a ,
+main.index > section > .middle > .index-news > .card:nth-child(6) .h3-index > a{
     color: var(--color-white); 
 }
-main.index > article > .middle > .index-news > .card:first-child > .article-content{
+main.index > section > .middle > .index-news > .card:first-child > .article-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-main.index > article > .middle > .index-news > .card:last-child > .article-content{
+main.index > section > .middle > .index-news > .card:last-child > .article-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -485,7 +486,7 @@ main.index > article > .middle > .index-news > .card:last-child > .article-conte
 /* -----------------------------------------| about |---------------------------------------- */
 main.about > section.hero{
     background:linear-gradient(rgba(0, 0, 0, 0.35) ,rgba(0, 0, 0, 0.35)), url(../images/hero-site-3.png) no-repeat center 60% / cover fixed;
-    max-height: 400px;
+    max-height: 350px;
 }
 
 main.about > section.about-site > .middle > .about-line{
