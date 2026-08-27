@@ -36,11 +36,11 @@ html{
 }
 body{
     background-color: var(--color-light-gray);
-    font-family: 'Rubik-light';
+    font-family: 'font-rubik-light';
 }
 h1,h2,h3,
 h4,h5,h6{
-    font-family: 'Antonio-Bold';
+    font-family: 'font-antonio-bold';
 }
 ul{
     list-style: none;
@@ -327,7 +327,7 @@ footer{
     color: var(--color-white);
     position: relative;
 }
-footer > .middle >.footer-style{
+.footer__list{
     padding: 10px 0px 20px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -335,34 +335,34 @@ footer > .middle >.footer-style{
     line-height: 25px;
     font-size: var(--font-p-improtent);
 }
-footer > .middle >.footer-style > li > .email:valid{
+.footer__item > .email:valid{
     border-color: var(--color-green-website);
 }
-footer > .middle >.footer-style > li > .email:invalid{
+.footer__item > .email:invalid{
     border-color: var(--color-lion);
 }
-footer > .middle >.footer-style > li > h3{
+.footer__title{
     padding: 10px 0px;
     font-size: var(--font-h3);
 }
-footer > .middle >.footer-style > li > input{
+.footer__item > input{
     padding: 10px 22px;
     margin: 5px auto;
     border-radius: 3px;
     font-size: var(--font-p-improtent);
 }
-footer > .middle >.footer-style > li > input[type="submit"]{
+.footer__item > input[type="submit"]{
     padding: 10px 93px;
     color: var(--color-white);
     background-color: var(--color-green-website);
 }
-footer > .middle >.footer-style > li > p{
+.footer__description{
     padding: 10px 0 20px 0;
 }
-footer > .middle >.footer-style > li:last-child > p{
+.footer__item:last-child > .footer__description{
     padding: 10px 0 60px 0;
 }
-footer > .middle >.footer-style > li > a{
+.footer__link{
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-join-btn);
@@ -370,28 +370,28 @@ footer > .middle >.footer-style > li > a{
     border: 2px solid transparent;
     transition: 0.4s;
 }
-footer > .middle >.footer-style > li > a:hover{
+.footer__link:hover{
     color: var(--color-join-btn);
     background-color: var(--color-white);
     border-color: var(--color-join-btn);
 }
-footer > .middle >.footer-style > li:nth-child(3) > ul {
+.footer__point{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-footer > .middle >.footer-style > li:nth-child(3) > ul li{
+.point__item{
     padding: 10px 0;
     width: 100%;
     border:1px solid transparent;
     border-bottom-color: #262525;
 }
-footer > .middle >.footer-style > li:nth-child(3) > ul li a{
+.point__link{
     padding: 10px 0;
     color: var(--color-white);
 }
-footer > .middle >.copyright{
+.footer__copyright{
     padding: 20px 40px;
     text-align: center;
     background-color: #262525;
