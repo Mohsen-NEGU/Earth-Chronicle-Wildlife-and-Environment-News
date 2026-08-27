@@ -14,43 +14,46 @@
             <a class="logo-site" href="#">EarthChronicle News♣</a>
             <!-- -------------------------| socials-icon |--------------------------- -->
             <div class="socials">
-                <a href="">
+                <a class="socials__links" href="#">
                     <i class="icon-telegram"></i>
                 </a>
-                <a href="">
+                <a class="socials__links" href="#">
                     <i class="icon-linkedin"></i>
                 </a>
-                <a href="">
+                <a class="socials__links" href="#">
                     <i class="icon-instagram"></i>
                 </a>
-                <a href="">
+                <a class="socials__links" href="#">
                     <i class="icon-github"></i>
                 </a>
             </div>
             <!-- -------------------------| navigation-menu |--------------------------- -->
             <nav class="menu">
-                <ul class="menu-list">
-                    <li>
-                        <a href="index.html">Home</a>
+                <!-- -------------------------| navigation-hamburger-menu |--------------------------- -->
+                <!-- <label
+                    class="hamburger"
+                    for="menu-toggle"
+                    aria-label="Toggle Navigation">
+                    <input type="checkbox" id="menu-toggle" class="hamburger__input" />
+                    <span class="hamburger__icon"></span>
+                </label> -->
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">About</a>
                     </li>
-                    <li>
-                        <a class="details we-are-in-page" href="#">Articles</a>
-                        <ul class="nav-bench">
-                            <li><a href="">Environmental Articles</a></li>
-                            <li><a href="">Watershed Management Articles</a></li>
-                            <li><a href="">Field Study Articles</a></li>
+                    <li class="menu__item">
+                        <a class="menu__link details we-are-in-page" href="articles.html">Articles</a>
+                        <ul class="menu__bench">
+                            <li class="bench__item"><a class="bench__link" href="">Environmental Articles</a></li>
+                            <li class="bench__item"><a class="bench__link" href="">Watershed Management Articles</a></li>
+                            <li class="bench__item"><a class="bench__link" href="">Field Study Articles</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-            <!-- -------------------------| navigation-hamburger-menu |--------------------------- -->
-            <!-- <label for="">
-                <input>
-            </label>
-            <nav class="hamburger-menu"></nav> -->
         </div>
     </header>
     <!------------------------------------| main articles |------------------------------------->
@@ -192,33 +195,33 @@
     <!------------------------------------| footer |------------------------------------->
     <footer> 
         <div class="middle">
-            <ul class="footer-style">
-                <li>
-                    <h3>ANIMALS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quod ut, dicta exercitationem aperiam cupiditate voluptates atque molestiae ratione placeat temporibus voluptatem.</p>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <h3 class="footer__title">ANIMALS</h3>
+                    <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quod ut, dicta exercitationem aperiam cupiditate voluptates atque molestiae ratione placeat temporibus voluptatem.</p>
                 </li>
-                <li>
-                    <h3>EMAIL</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <li class="footer__item">
+                    <h3 class="footer__title">EMAIL</h3>
+                    <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <input class="email" type="email" placeholder="Enter Email...">
                     <input type="submit" value="subscribe">
                 </li>
-                <li>
-                    <h3>SITE LINKS</h3>
-                    <ul>
-                        <li><a href="">Help & Support</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact</a></li>
+                <li class="footer__item">
+                    <h3 class="footer__title">SITE LINKS</h3>
+                    <ul class="footer__point">
+                        <li class="point__item"><a class="point__link" href="#">Help & Support</a></li>
+                        <li class="point__item"><a class="point__link" href="#">Privacy Policy</a></li>
+                        <li class="point__item"><a class="point__link" href="about.html">About Us</a></li>
+                        <li class="point__item"><a class="point__link" href="#">Contact</a></li>
                     </ul>
                 </li>
-                <li>
-                    <h3>JOIN US</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus aspernatur rem!</p>
-                    <a href="#">Join Now</a>
+                <li class="footer__item">
+                    <h3 class="footer__title">JOIN US</h3>
+                    <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus aspernatur rem!</p>
+                    <a class="footer__link" href="#">Join Now</a>
                 </li>
             </ul>
-            <div class="copyright">Copyright &copy; 2026, All Rights Reserved</div>
+            <div class="footer__copyright">Copyright &copy; 2026, All Rights Reserved</div>
         </div>
     </footer>
 </body>

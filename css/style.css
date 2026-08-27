@@ -293,11 +293,19 @@ header{
     position: relative;
     transition: 1s;
 }
+.bench__item{
+    padding: 10px 0px;
+}
+.bench__item:hover .bench__link{
+    background: var(--color-dark-icon-hover);
+    color: var(--color-light-gray);
+}
 .bench__link{
+    padding: 5px 5px;
     border-radius: 20px;
 }
-.menu__item:last-child:hover > .nav-bench{
-    width: 250px;
+.menu__item:last-child:hover > .menu__bench{
+    width: 310px;
     display: block;
     position: absolute;
     top: 9%;
