@@ -498,72 +498,72 @@ footer{
     border-radius: 20px;
 }
 /* -----------------------------------------| about |---------------------------------------- */
-main.about > section.hero{
+main.about  .hero{
     background:linear-gradient(rgba(0, 0, 0, 0.35) ,rgba(0, 0, 0, 0.35)), url(../images/hero-site-3.png) no-repeat center 60% / cover fixed;
     max-height: 350px;
 }
 
-main.about > section.about-site > .middle > .about-line{
+.about__line{
     display: grid;
     grid-auto-flow:column;
     grid-template-columns: 7fr 300px;
 }
-main.about > section.about-site > .middle > .about-line > li{
+.about__line  li{
     padding: 10px 5px;
     margin: 30px 10px;
     background-color: var(--color-white);
     position: relative;
 }
-main.about > section.about-site > .middle > .about-line > li.right h1{
+.about__info .about__title{
     font-size: var(--font-h1);
     font-weight: bold;
     padding: 5px 15px;
 }
-main.about > section.about-site > .middle > .about-line > li.right p{
+.about__info .about__description{
     font-size: var(--font-p-improtent);
     font-weight: bold;
     padding: 10px 20px;
 }
-main.about > section.about-site > .middle > .about-line > li.right > .wrapper{
+.wrapper{
     width: 350px;
     padding: 5px 20px;
     float: left;
     transition: 0.5s;
     shape-outside: circle(45%);
 }
-main.about > section.about-site > .middle > .about-line > li.right > .wrapper > img{
+.wrapper img{
     border-radius: 50%;
     padding: 0 15px;
     transition: 0.5s;
 }
-main.about > section.about-site > .middle > .about-line > li.right > .wrapper:hover{
+.wrapper:hover{
     shape-outside: circle(60%);
     float: left;
 }
-main.about > section.about-site > .middle > .about-line > li.right > .wrapper > img:hover{
+.wrapper img:hover{
     border-radius: 20%;
 }
-main.about > section.about-site > .middle > .about-line > li.left{
+.about__line .about__adv{
     padding: 15px 15px;
     height: 180px;
     background-color: var(--color-green-website);
     color: var(--color-white);
 }
-main.about > section.about-site > .middle > .about-line > li.left h2{
+.about__adv .adv__title{
     padding: 5px 0;
     font-size: var(--font-h3);
 }
-main.about > section.about-site > .middle > .about-line > li.left p{
+.about__adv .adv__description{
     padding: 15px 0px;
 }
-main.about > section.about-site > .middle > .about-line > li.left a{
+.about__adv .adv__link{
     padding: 10px 86px;
     color: var(--color-white);
     background-color: var(--color-black);
     font-size: var(--font-p-improtent);
     transition: 0.5s;
 }
-main.about > section.about-site > .middle > .about-line > li.left a:hover{
+.about__adv .adv__link:hover{
     color: var(--color-black);
     background-color: var(--color-white);
 }
