@@ -624,6 +624,7 @@ main.about  .hero{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px 1px var(--color-dark-icon-hover);
 }
 .articles__collection > .browse__category .browse__item img,
 .articles__latest > .latest__list .latest__item img{
@@ -661,6 +662,7 @@ main.about  .hero{
     margin: 5px;
     padding: 5px 5px 15px 5px;
     background-color: var(--color-white);
+    box-shadow: 0 0 10px 1px var(--color-dark-icon-hover);
 }
 .latest__list .latest__item .information{
     padding: 0px 10px;
