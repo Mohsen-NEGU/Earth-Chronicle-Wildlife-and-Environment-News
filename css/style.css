@@ -163,37 +163,35 @@ img{
     opacity: 1;
 }
 /*------------------------------------------| Articles |---------------------------------------*/
-.info > .middle > .table{
+.info__table{
     padding: 10px 0px;
     display: grid;
     grid-template-columns: 6fr 300px;
 }
-.info > .middle > .table > li.right-article{
+.info__article{
     padding: 10px 10px;
     margin: 0 10px;
     background-color: var(--color-white);
-}
-.info > .middle > .table > .right-article{
     font-size: var(--font-p-improtent);
     font-weight: bold;
     line-height: 30px;
 }
-.info > .middle > .table > .right-article > h1{
+.info__title{
     font-size: var(--font-h1);
     line-height: 60px;
     padding: 10px 10px;
 }
-.info > .middle > .table > .right-article > .writer{
+.info__writer{
     padding: 10px 5px;
     background-color: var(--color-light-gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.info > .middle > .table > .right-article > .writer > a{
+.info__writer a{
     padding: 4px 16px;
 }
-.left-article{
+.adv__article{
     padding: 0 0;
     background-color: transparent;
     height: 480px;
@@ -202,42 +200,42 @@ img{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-.left-article div{
+.adv__article div{
     margin: 5px 0;
 }
-.left-article > .first{
+.adv__first{
     padding: 20px 10px;
     background-color: var(--color-green-website);
 }
-.left-article > .first > h2{
+.adv__first .adv__title{
     font-size: var(--font-h2);
     color: var(--color-white);
 }
-.left-article > .first > p{
+.adv__first .adv__description{
     padding: 15px 0px;
     color: var(--color-white);
     font-size: var(--font-p);
 }
-.left-article > .first > a{
+.adv__first .adv__link{
     padding: 10px 100px;
     color: var(--color-white);
     background-color: var(--color-black);
     font-weight: 100;
     transition: 0.5s;
 }
-.left-article > .first > a:hover{
+.adv__first .adv__link:hover{
     color: var(--color-black);
     background-color: var(--color-white);
 }
-.left-article > .second{
+.adv__article .adv__second{
     padding: 20px 10px;
     background-color: var(--color-white);
 }
-.left-article > .second > h3{
+.adv__second .categories{
     padding: 10px 0;
     font-size: var(--font-h3);
 }
-.left-article > .second > .sugestion > li{
+.adv__second  .sugestion  .sugestion__item{
     padding: 15px 0;
     border: 1px solid transparent;
     border-bottom-color: var(--color-black);
