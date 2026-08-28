@@ -566,7 +566,7 @@ main.about  .hero{
     background-color: var(--color-white);
 }
 /* ---------------------------------------| Articles page |------------------------------------------- */
-main.articles > section.title-articles{
+.articles__route{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -575,28 +575,28 @@ main.articles > section.title-articles{
     height: 350px;
     color: var(--color-white);
 }
-main.articles > section.title-articles h1{
+.articles__title{
     padding: 10px 10px;
     font-size: var(--font-h1);
 }
-main.articles > section.title-articles div a{
+.route a{
     padding: 10px 10px;
     font-size: var(--font-p);
     color: var(--color-white);
 }
-main.articles > section.articles-browse{
+.articles__browse{
     background-color: var(--color-light-gray);
 }
-main.articles > section.articles-browse > .middle{
+.articles__browse .middle{
     padding: 10px 10px;
     display: grid;
     grid-template-columns: 6fr 300px;
 }
-main.articles > section.articles-browse > .middle h2{
+.browse__title{
     padding: 10px 5px  5px 5px;
     font-size: var(--font-h2);
 }
-main.articles > section.articles-browse > .middle .onther-line{
+.onther-line{
     margin: 0px 0px 5px 5px;
     width: 50px;
     height: 2px;
@@ -604,19 +604,19 @@ main.articles > section.articles-browse > .middle .onther-line{
     background-color: var(--color-green-website);
     transition: 0.7s ease-in-out;
 }
-main.articles > section.articles-browse > .middle h2:hover ~ .onther-line{
+.browse__title:hover ~ .onther-line{
     width: 260px;
 }
-main.articles > section.articles-browse > .middle > .new{
+.articles__news{
     display: grid;
     grid-template-rows: 0.5fr 1fr;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-new > ul.browse-category{
+.browse__category{
     padding: 10px 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-new > ul.browse-category li{
+.browse__category .browse__item{
     margin: 5px;
     padding: 5px 5px 15px 5px;
     background-color: var(--color-white);
@@ -625,16 +625,16 @@ main.articles > section.articles-browse > .middle > .new > .collection-of-articl
     justify-content: center;
     align-items: center;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-new > ul.browse-category li img,
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-top  ul.latest-articles li img{
+.articles__collection > .browse__category .browse__item img,
+.articles__latest > .latest__list .latest__item img{
     width: 100%;
     height: 230px;
     border-radius: 5px;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-new > ul.browse-category li .article-content{
+.browse__category .browse__item .articles__content{
     position: relative;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-new > ul.browse-category li h3{
+.browse__category .browse__item .sub__title{
     position: absolute;
     top: 0%;
     left: 0%;
@@ -642,42 +642,41 @@ main.articles > section.articles-browse > .middle > .new > .collection-of-articl
     color: var(--color-white);
     z-index: 50;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-new > ul.browse-category li p,
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-top  ul.latest-articles li p{
+.sub__paraghraph{
     padding: 5px 0px 15px 0px;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-new > ul.browse-category li a{
+.sub__link{
     padding: 10px 20px;
     background-color: var(--color-green-website);
     color: var(--color-white);
     border-radius: 5px;
     font-size: var(--font-p);
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-top  ul.latest-articles{
+.latest__list{
     padding: 10px 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-top  ul.latest-articles li{
+.latest__list .latest__item{
     margin: 5px;
     padding: 5px 5px 15px 5px;
     background-color: var(--color-white);
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-top  ul.latest-articles li .information{
+.latest__list .latest__item .information{
     padding: 0px 10px;
     display: flex;
     justify-content: space-between;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-top  ul.latest-articles li .information time{
+.information .information__time{
     font-size: var(--font-p);
     font-weight: bold;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-top  ul.latest-articles li .information a{
+.information .information__link{
     color: var(--color-green-website);
     font-size: var(--font-p);
     font-weight: bold;
     transition: 0.5s;
 }
-main.articles > section.articles-browse > .middle > .new > .collection-of-articles-top  ul.latest-articles li .information a:hover{
+.information .information__link:hover{
     color: var(--color-dark-icon-hover);
 }
