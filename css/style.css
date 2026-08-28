@@ -79,19 +79,19 @@ img{
     margin: 0 auto;
 }
 /* hero */
-section.hero{
+.hero{
     display: flex;
     align-items: center;
     height: 550px;
     background:linear-gradient(rgba(0, 0, 0, 0.35) ,rgba(0, 0, 0, 0.35)), url(../images/hero.png) no-repeat center 60% / cover fixed;
 }
-section.hero > .middle > .list-info{
+.hero__information{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: var(--color-white);
 }
-section.hero > .middle > .list-info > a{
+.hero__link{
     font-size: var(--font-a-animal);
     background-color: var(--color-leopart);
     color: var(--color-white);
@@ -99,18 +99,18 @@ section.hero > .middle > .list-info > a{
     border-radius: 50px;
     transition: 0.5s;
 }
-section.hero > .middle > .list-info > a:hover{
+.hero__link:hover{
     background-color: var(--color-white);
     color: var(--color-leopart);
 }
-section.hero > .middle > .list-info > h1{
+.hero__title{
     font-size: var(--font-h1);
 }
-section.hero > .middle > .list-info > p{
+.hero__description{
     width: 40%;
     font-size: var(--font-p);
 }
-section.hero > .middle > .list-info > a.read-more{
+.hero__read-more{
     padding: 10px 20px;
     font-size: var(--font-p);
     background-color: var(--color-green-website);
@@ -140,7 +140,7 @@ section.hero > .middle > .list-info > a.read-more{
 .c-5-btn{
     background-color: var(--color-fox);
 }
-.scroll > .elevator{
+.elevator{
     width: 60px;
     height: 60px;
     font-size: var(--font-icon-improtent);
@@ -159,7 +159,7 @@ section.hero > .middle > .list-info > a.read-more{
     z-index: 50;
     transition: 0.5s;
 }
-.scroll > .elevator:hover{
+.elevator:hover{
     opacity: 1;
 }
 /*------------------------------------------| Articles |---------------------------------------*/
@@ -407,7 +407,7 @@ footer{
 }
 /* -----------------------------------------| Pages |---------------------------------------- */
 /* -----------------------------------------| index |---------------------------------------- */
-main.index > section > .middle > .index-news{
+.news__list{
     width: 100%;
     padding: 10px 0;
     display: grid;
@@ -415,38 +415,38 @@ main.index > section > .middle > .index-news{
     grid-gap: 20px;
     
 }
-main.index >section > .middle > h2{
+.news__title{
     font-size: var(--font-h2);
     padding: 5px 0;
 }
-main.index > section > .middle > .index-news > .card{
+.news__card{
     padding: 15px;
     background-color: var(--color-white);
     border-radius: 5px;
     position: relative;
 }
-main.index > section > .middle > .index-news > .card:first-child{
+.news__card:first-child{
     display: grid;
     grid-column: 1/3;
     grid-template-columns: repeat(2,1fr);
 }
-main.index > section > .middle > .index-news > .card:last-child{
+.news__card:last-child{
     display: grid;
     grid-column: 2/4;
     grid-template-columns: repeat(2,1fr);
 }
 
-main.index > section > .middle > .index-news > .card img{
+.news__card img{
     border-radius: 5px;
 }
-main.index > section > .middle > .index-news > .card > .article-content{
+.news__content{
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-main.index > section > .middle > .index-news > .card > .article-content > h3 > a::after{
+.news__link::after{
     content: '';
     position: absolute;
     top: 0;
@@ -456,36 +456,36 @@ main.index > section > .middle > .index-news > .card > .article-content > h3 > a
     background-color: var(--color-green-website);
     opacity: 0.03;
 }
-main.index > section > .middle > .index-news > .card > .article-content:nth-child(2),
-main.index > section > .middle > .index-news > .card > .article-content:nth-child(3),
-main.index > section > .middle > .index-news > .card > .article-content:nth-child(4),
-main.index > section > .middle > .index-news > .card > .article-content:nth-child(5),
-main.index > section > .middle > .index-news > .card > .article-content:nth-child(6){
+.news__content:nth-child(2),
+.news__content:nth-child(3),
+.news__content:nth-child(4),
+.news__content:nth-child(5),
+.news__content:nth-child(6){
     padding-top: 20px;
 }
-main.index > section > .middle > .index-news > .card:nth-child(2),
-main.index > section > .middle > .index-news > .card:nth-child(6){
+.news__card:nth-child(2),
+.news__card:nth-child(6){
     color: var(--color-white);
     background-color: var(--color-green-website);
 }
-main.index > section > .middle > .index-news > .card:nth-child(2){
+.news__card:nth-child(2){
     background-color: var(--color-black);
 }
-main.index > section > .middle > .index-news > .card:nth-child(2) .h3-index,
-main.index > section > .middle > .index-news > .card:nth-child(6) .h3-index{
-    padding: 15px 0;
+.news__different,
+.news__different{
+    padding: 10px 0;
 }
-main.index > section > .middle > .index-news > .card:nth-child(2) .h3-index > a ,
-main.index > section > .middle > .index-news > .card:nth-child(6) .h3-index > a{
+.news__different > .news__link ,
+.news__different > .news__link{
     color: var(--color-white); 
 }
-main.index > section > .middle > .index-news > .card:first-child > .article-content{
+.news__card:first-child > .news__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-main.index > section > .middle > .index-news > .card:last-child > .article-content{
+.news__card:last-child > .news__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
