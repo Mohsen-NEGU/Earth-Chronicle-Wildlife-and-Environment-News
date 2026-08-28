@@ -682,3 +682,75 @@ main.about  .hero{
 .information .information__link:hover{
     color: var(--color-dark-icon-hover);
 }
+/* -----------------------------------| Environmental Articles (main) page |-------------------------------------- */
+/* -----------------------------------| Watershed Management Articles (main) page |-------------------------------------- */
+/* -----------------------------------| ZooLogical Articles (main) page |-------------------------------------- */
+.threepage__browse .middle{
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 6fr 300px;
+}
+.threepage__title{
+    font-size: var(--font-h2);
+    padding-block: 10px;
+}
+.threepage__title:hover ~ .onther-line{
+    width: 300px;
+}
+.sub-route{
+    padding: 10px 0px;
+}
+.sub-route a{
+    padding: 10px 10px;
+    font-size: var(--font-p-improtent);
+    font-weight: bold;
+    color: var(--color-black);
+}
+.threepage__news{
+    margin-inline: 10px;
+}
+.threepage__list{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-dark-icon-hover);
+}
+.threepage__item{
+    padding-block: 10px;
+    display: flex;
+    flex-direction: row;
+    border:1px solid var(--color-dark-icon-hover);
+}
+.threepage__item img{
+    margin: 10px;
+    width: 300px;
+    aspect-ratio: 14/9;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.threepage__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.threepage__content h3{
+    font-size: var(--font-h3);
+}
+.threepage__sub-paraghraph{
+    font-size: var(--font-p);
+}
+.threepage__information .threepage__time{
+    padding-right: 60px;
+    color: var(--color-dark-icon-hover);
+    font-weight: bold;
+    font-size: var(--font-p);
+}
+.threepage__information .threepage__link{
+    color: var(--color-green-website);
+    font-weight: bold;
+    font-size: var(--font-p);
+    transition: 0.5s;
+}
+.threepage__information .threepage__link:hover{
+    color: var(--color-dark-icon-hover);
+}
