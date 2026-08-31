@@ -23,6 +23,13 @@
     /* --padding:;
     --morgin:; */
     --max-width: 1200px;
+    /* for hamburger menu */
+    --bar-width: 35px;
+    --bar-height: 4px;
+    --hamburger-gap:8px;
+    --hamburger-margin: 9px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 /* -----------------------------------------| Tags |---------------------------------------- */
 *,
@@ -279,6 +286,55 @@ header{
     align-items: center;
     font-size: var(--font-p-improtent);
     font-weight: bold;
+}
+.menu__hamburger{
+    display: none;
+}
+.menu__hamburger{
+        /* display: flex; */
+        align-self: flex-end;
+        --x-width:calc(var(--hamburger-height)* 1.19);
+        flex-direction: column;
+        gap: var(--hamburger-gap);
+        width: max-content;
+        z-index: 6;
+        position:fixed;
+        top: 45px;
+        right: 10px;
+        cursor: pointer;
+}
+.menu__hamburger:has(#menu-toggle:focus-visible)::after,
+.menu__hamburger:has(#menu-toggle:focus-visible)::before,
+.menu__hamburger #menu-toggle:focus-visible{
+        border: 1px solid var(--background);
+        box-shadow: 0 0 1px var(--foreground);
+}
+.menu__hamburger::after,
+.menu__hamburger::before,
+.menu__hamburger #menu-toggle{
+        content: '';
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: green;
+        transition: opacity var(--animation-timing) , width var(--animation-timing) , transform var(--animation-timing);
+        transform-origin: left center;
+}
+.menu__hamburger:has(#menu-toggle:checked)::before{
+        transform:translate(0 , calc(var(--bar-height) / -2)) rotate(45deg);
+        width: var(--x-width);
+}
+.menu__hamburger:has(#menu-toggle:checked)::after{
+        transform:translate(0 , calc(var(--bar-height) / -2)) rotate(-45deg);
+        width: var(--x-width);  
+}
+.menu__hamburger #menu-toggle:checked{
+        opacity: 0;
+        width: 0;
+}
+.menu__hamburger #menu-toggle{
+        appearance: none;
+        border: none;
+        pointer-events: none;
 }
 .details{
     position: relative;
@@ -779,4 +835,47 @@ main.about  .hero{
 }
 .threepage__information .threepage__link:hover{
     color: var(--color-dark-icon-hover);
+}
+
+
+/*---------------------------------| Responsive 768px |--------------------------------------*/
+@media (max-width: 768px) {
+    .menu__list{
+        display: none;
+    }
+    .menu__hamburger{
+        display: flex;
+        top: 1rem;
+        right: 0.8rem;
+    }
+    .menu__list{
+        width: 50%;
+        padding: 100px 0px;
+        display: block;
+        direction: rtl;
+        background-color: var(--color-hamburger-links-container);
+        width:max-content;
+        min-height: 10000px;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        transform: translate(0 , 0);
+        transition: var(--animation-timing);
+    }
+    .menu__item{
+        padding: 20px 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        z-index: 50;
+    }
+    .menu__hamburger:has(#menu-toggle:checked) ~ .menu__list{
+        padding: 100px 0px;
+        display: block;
+        min-height: 10000px;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        transform: translate(-100% ,0);
+    }
 }
