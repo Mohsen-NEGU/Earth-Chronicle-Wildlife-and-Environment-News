@@ -475,8 +475,7 @@ footer{
     padding: 10px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    
+    grid-gap: 20px; 
 }
 .news__title{
     font-size: var(--font-h2);
@@ -840,11 +839,16 @@ main.about  .hero{
 
 /*---------------------------------| Responsive 768px |--------------------------------------*/
 @media (max-width: 768px) {
+    /* -------------------------------| layout |----------------------------------- */
+    .logo-site{
+        font-size: 28px;
+    }
     .menu__list{
         display: none;
     }
     .menu__hamburger{
         display: flex;
+        position: fixed;
         top: 1rem;
         right: 0.8rem;
     }
@@ -877,5 +881,49 @@ main.about  .hero{
         top: 0;
         left: 100%;
         transform: translate(-100% ,0);
+    }
+    footer{
+        min-height: 650px;
+        overflow:scroll;
+    }
+    .footer__list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__copyright{
+        padding: 15px 35px;
+        text-align: center;
+        background-color: #262525;
+        font-size: 16px;
+    }
+
+    .news__title{
+        font-size: 25px;
+        padding: 5px 0;
+    }
+    .news__list{
+        width: 100%;
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px; 
+    }
+    .news__description{
+        display: none;
+    }
+    .news__card:first-child{
+        display: grid;
+        grid-column: 1/4;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .news__card:last-child{
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .news__card:nth-child(6){
+        grid-column: 3/4;
+        /* grid-row: 2/4; */
     }
 }
