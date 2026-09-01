@@ -341,9 +341,10 @@ header{
 }
 .details::after{
     content: "▼";
+    /* padding-right:10px; */
     position: absolute;
-    top: 30%;
-    left: 100%;
+    top: 29%;
+    left: 85%;
     transform: translate(-100% -50%);
     color: var(--color-green-website);
     transition: 0.5s;
@@ -382,6 +383,9 @@ header{
     display: block;
     padding: 10px;
     transition: 0.4s;
+}
+.menu__link:not(:last-child){
+    padding: 10px 25px;
 }
 .we-are-in-page{
     background-color: var(--color-green-website);
@@ -836,7 +840,7 @@ main.about  .hero{
 }
 /*---------------------------------| Responsive 375px |--------------------------------------*/
 
-/*---------------------------------| Responsive 512px |--------------------------------------*/
+/*---------------------------------| Responsive 375px to 512px |--------------------------------------*/
 @media (min-width: 375px) and (max-width: 512px) {
 /* -------------------------------| layout |----------------------------------- */
     .logo-site{
@@ -984,8 +988,20 @@ main.about  .hero{
         align-items: center;
         border:1px solid var(--color-dark-icon-hover);
     }
+    .browse__category{
+        padding: 10px 5px;
+        display: grid;
+        grid-template-columns: 325px;
+        justify-content: center;
+    }
+    .latest__list{
+        padding: 10px 5px;
+        display: grid;
+        grid-template-columns:325px;
+        justify-content: center;
+    }
 }
-/*---------------------------------| Responsive 768px |--------------------------------------*/
+/*---------------------------------| Responsive 512px to 768px |--------------------------------------*/
 @media (min-width: 512px) and (max-width: 768px) {
     /* -------------------------------| layout |----------------------------------- */
     .logo-site{
@@ -1121,5 +1137,35 @@ main.about  .hero{
     }
     .wrapper{
         width: 280px;
+    }
+}
+/*---------------------------------| Responsive 768px to 946px |--------------------------------------*/
+@media (min-width: 768px) and (max-width: 946px){
+    .footer__list{
+        padding: 10px 0px 20px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+        line-height: 25px;
+        font-size: var(--font-p-improtent);
+    }
+    .footer__item:last-child{
+        display: none;
+    }
+    .footer__copyright{
+        margin-top: 10px;
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+    .about__adv,
+    .adv__article,
+    .adv__article{
+        display: none;
+    }
+    .about__info,
+    .articles__news,
+    .info__article,
+    .threepage__news{
+        grid-column: 1/3;
     }
 }
