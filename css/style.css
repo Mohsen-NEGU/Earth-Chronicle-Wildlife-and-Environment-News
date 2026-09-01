@@ -547,7 +547,6 @@ footer{
 .news__different{
     padding: 10px 0;
 }
-.news__different > .news__link ,
 .news__different > .news__link{
     color: var(--color-white); 
 }
@@ -913,8 +912,6 @@ main.about  .hero{
     }
     .footer__copyright{
         padding: 15px 35px;
-        text-align: center;
-        background-color: #262525;
         font-size: 16px;
     }
     .footer__item:nth-child(2){
@@ -927,23 +924,15 @@ main.about  .hero{
         align-self: flex-start;
     }
     .footer__item > input{
-         padding: 10px 50px;
-        margin: 5px auto;
-        border-radius: 3px;
-        font-size: var(--font-p-improtent);
+        padding: 10px 50px;
     }
     .footer__item > input[type="submit"]{
         padding: 10px 120px;
-        color: var(--color-white);
-        background-color: var(--color-green-website);
     }
     .footer__copyright{
         padding: 10px 30px;
-        text-align: center;
-        background-color: #262525;
-        font-size: 15px;
     }
-
+    /* ----------------------------------| pages |----------------------------------- */
     .news__list{
         width: 100%;
         padding: 10px 0;
@@ -955,7 +944,7 @@ main.about  .hero{
     .news__card:first-child{
         display: grid;
         grid-column: 1/2;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .news__card:last-child{
         display: grid;
@@ -1060,8 +1049,8 @@ main.about  .hero{
         width: 100%;
         padding: 10px 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr; */
         grid-gap: 20px; 
     }
     .news__description{
@@ -1069,13 +1058,32 @@ main.about  .hero{
     }
     .news__card:first-child{
         display: grid;
-        grid-column: 1/4;
-        grid-template-columns: repeat(2,1fr);
+        grid-column: 1/2;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .news__card:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .news__card:nth-child(3){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .news__card:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .news__card:nth-child(5){
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .news__card:nth-child(6){
+        display: none;
     }
     .news__card:last-child{
         display: grid;
-        grid-column: 2/3;
-        grid-row: 3/4;
+        grid-column: 1/2;
+        grid-row: 2/3;
         grid-template-columns: repeat(1,1fr);
     }
     .news__card:nth-child(6){
