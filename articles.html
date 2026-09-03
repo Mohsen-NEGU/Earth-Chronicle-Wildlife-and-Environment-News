@@ -1,230 +1,367 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Articles | Earth Chronicle</title>
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicons/favicon-96x96.png">
-</head>
-<body>
-    <!-- -------------------------| header |--------------------------- -->
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicons/favicon-96x96.png" />
+  </head>
+  <body>
     <header>
-        <div class="middle nav-inner"> 
-            <!-- -------------------------| logo-website |--------------------------- -->
-            <a class="logo-site" href="#">EarthChronicle News♣</a>
-            <!-- -------------------------| socials-icon |--------------------------- -->
-            <div class="socials">
-                <a class="socials__links" href="#">
-                    <i class="icon-telegram"></i>
-                </a>
-                <a class="socials__links" href="#">
-                    <i class="icon-linkedin"></i>
-                </a>
-                <a class="socials__links" href="#">
-                    <i class="icon-instagram"></i>
-                </a>
-                <a class="socials__links" href="#">
-                    <i class="icon-github"></i>
-                </a>
-            </div>
-            <!-- -------------------------| navigation-menu |--------------------------- -->
-            <nav class="menu">
-                <!-- -------------------------| navigation-hamburger-menu |--------------------------- -->
-                <label
-                    class="menu__hamburger"
-                    for="menu-toggle"
-                    aria-label="Toggle Navigation">
-                    <input type="checkbox" id="menu-toggle" class="hamburger__input" />
-                </label>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="index.html">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="about.html">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link details we-are-in-page" href="articles.html">Articles</a>
-                        <ul class="menu__bench__list">
-                            <li class="bench__item"><a class="bench__link" href="environmental-article.html">Environmental Articles</a></li>
-                            <li class="bench__item"><a class="bench__link" href="">Watershed Management Articles</a></li>
-                            <li class="bench__item"><a class="bench__link" href="">Field Study Articles</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+      <div class="middle nav-inner">
+        <a class="logo-site" href="index.html">EarthChronicle News♣</a>
+        <div class="socials">
+          <a class="socials__links" href="#" aria-label="Telegram">
+            <i class="icon-telegram"></i>
+          </a>
+          <a class="socials__links" href="#" aria-label="LinkedIn">
+            <i class="icon-linkedin"></i>
+          </a>
+          <a class="socials__links" href="#" aria-label="Instagram">
+            <i class="icon-instagram"></i>
+          </a>
+          <a class="socials__links" href="#" aria-label="GitHub">
+            <i class="icon-github"></i>
+          </a>
         </div>
+        <nav class="menu" aria-label="Main Navigation">
+          <label
+            class="menu__hamburger"
+            for="menu-toggle"
+            aria-label="Toggle Navigation">
+            <input type="checkbox" id="menu-toggle" class="hamburger__input" />
+          </label>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link details we-are-in-page" href="articles.html"
+                >Articles</a
+              >
+              <ul class="menu__bench__list">
+                <li class="bench__item">
+                  <a class="bench__link" href="environmental-article.html"
+                    >Environmental Articles</a
+                  >
+                </li>
+                <li class="bench__item">
+                  <a class="bench__link" href="#"
+                    >Watershed Management Articles</a
+                  >
+                </li>
+                <li class="bench__item">
+                  <a class="bench__link" href="#">Field Study Articles</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!------------------------------------| main articles |------------------------------------->
     <main class="articles">
-        <section class="articles__route">
-            <h1 class="articles__title">ARTICLES</h1>
-            <div class="route">
-                <a href="index.html">Home</a> >
-                <a href="articles.html">Articles</a>
-            </div>
-        </section>
-        <section class="articles__browse">
-            <div class="middle">
-                <div class="articles__news">
-                    <div class="articles__collection">
-                        <h2 class="browse__title">Browse by Category</h2>
-                        <div class="onther-line"></div>
-                        <ul class="browse__category">
-                            <li class="browse__item">
-                                <img src="images/planet1.png" alt="healthy-plant">
-                                <div class="articles__content">
-                                    <h3 class="sub__title">Environmental Articles</h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <a class="sub__link" href="">View Article</a>
-                                </div>
-                            </li>
-                            <li class="browse__item">
-                                <img src="images/area2.jpg" alt="Amazon-rever">
-                                <div class="articles__content">
-                                    <h3 class="sub__title">Watershed Management Articles</h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <a class="sub__link" href="">View Article</a>
-                                </div>
-                            </li>
-                            <li class="browse__item">
-                                <img src="images/animal7.png" alt="Cat">
-                                <div class="articles__content">
-                                    <h3 class="sub__title">Watershed Management Articles</h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <a class="sub__link" href="">View Article</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="articles__latest">
-                        <h2 class="browse__title">Latest Articles</h2>
-                        <div class="onther-line"></div>
-                        <ul class="latest__list">
-                            <li class="latest__item">
-                                <img src="images/area9.png" alt="nil-lake">
-                                <div class="articles__content">
-                                    <h3><a href="articles/cat-article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <div class="information">
-                                        <time class="information__time" datetime="">Jan 6 2026</time>
-                                        <a class="information__link" class="read-more" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="latest__item">
-                                <img src="images/animal8.jpg" alt="pirana">
-                                <div class="articles__content">
-                                    <h3><a href="articles/cat-article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <div class="information">
-                                        <time class="information__time" datetime="">Jan 6 2026</time>
-                                        <a class="information__link" class="read-more" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="latest__item">
-                                <img src="images/area1.png" alt="happy-forst">
-                                <div class="articles__content">
-                                    <h3><a href="articles/cat-article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <div class="information">
-                                        <time class="information__time" datetime="">Jan 6 2026</time>
-                                        <a class="information__link" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="latest__item">
-                                <img src="images/area4.jpg" alt="himalia">
-                                <div class="articles__content">
-                                    <h3><a href="articles/cat-article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <div class="information">
-                                        <time class="information__time" datetime="">Jan 6 2026</time>
-                                        <a class="information__link" class="read-more" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="latest__item">
-                                <img src="images/area7.png" alt="signi-mountens">
-                                <div class="articles__content">
-                                    <h3><a href="articles/cat-article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <div class="information">
-                                        <time class="information__time" datetime="">Jan 6 2026</time>
-                                        <a class="information__link" class="read-more" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="latest__item">
-                                <img src="images/animal6.png" alt="Leopart(H/W)">
-                                <div class="articles__content">
-                                    <h3><a href="articles/cat-article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                                    <p class="sub__paraghraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <div class="information">
-                                        <time class="information__time" datetime="">Jan 6 2026</time>
-                                        <a class="information__link" class="read-more" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="top">
-                    <div class="adv__article">
-                        <div class="adv__first">
-                                <h2 class="adv__title">JOIN US</h2>
-                                <p class="adv__description">Lorem ipsum dolor sit amet consectetur adipisicing elit??? </p>
-                                <a class="adv__link" href="#">Join Now</a>
-                        </div>
-                        <div class="adv__second">
-                            <h3 class="categories">CATEGORIES</h3>
-                            <ul class="sugestion">
-                                <li class="sugestion__item"><a class="sugestion__link" href="articles/tiger-article_1.html">> Tigers</a></li>
-                                <li class="sugestion__item"><a class="sugestion__link" href="articles/liones-article.html">> Strong-Mother</a></li>
-                                <li class="sugestion__item"><a class="sugestion__link" href="articles/wolf_article_1.html">> Wolves-life</a></li>
-                                <li class="sugestion__item"><a class="sugestion__link" href="articles/cat-article_1.html">> Home-Cats</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!------------------------------------| footer |------------------------------------->
-    <footer> 
-        <div class="middle">
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <h3 class="footer__title">ANIMALS</h3>
-                    <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quod ut, dicta exercitationem aperiam cupiditate voluptates atque molestiae ratione placeat temporibus voluptatem.</p>
-                </li>
-                <li class="footer__item">
-                    <h3 class="footer__title">EMAIL</h3>
-                    <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <input class="email" type="email" placeholder="Enter Email...">
-                    <input type="submit" value="subscribe">
-                </li>
-                <li class="footer__item">
-                    <h3 class="footer__title">SITE LINKS</h3>
-                    <ul class="footer__point">
-                        <li class="point__item"><a class="point__link" href="#">Help & Support</a></li>
-                        <li class="point__item"><a class="point__link" href="#">Privacy Policy</a></li>
-                        <li class="point__item"><a class="point__link" href="about.html">About Us</a></li>
-                        <li class="point__item"><a class="point__link" href="#">Contact</a></li>
-                    </ul>
-                </li>
-                <li class="footer__item">
-                    <h3 class="footer__title">JOIN US</h3>
-                    <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus aspernatur rem!</p>
-                    <a class="footer__link" href="#">Join Now</a>
-                </li>
-            </ul>
-            <div class="footer__copyright">Copyright &copy; 2026, All Rights Reserved</div>
+      <section class="articles__route">
+        <h1 class="articles__title">ARTICLES</h1>
+        <div class="route">
+          <a href="index.html">Home</a> &gt;
+          <a href="articles.html">Articles</a>
         </div>
+      </section>
+      <section class="articles__browse">
+        <div class="middle">
+          <div class="articles__news">
+            <div class="articles__collection">
+              <h2 class="browse__title">Browse by Category</h2>
+              <div class="onther-line"></div>
+              <ul class="browse__category">
+                <li class="browse__item">
+                  <img src="images/planet1.png" alt="healthy-plant" />
+                  <div class="articles__content">
+                    <h3 class="sub__title">Environmental Articles</h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <a class="sub__link" href="environmental-article.html"
+                      >View Article</a
+                    >
+                  </div>
+                </li>
+                <li class="browse__item">
+                  <img src="images/area2.jpg" alt="Amazon-rever" />
+                  <div class="articles__content">
+                    <h3 class="sub__title">Watershed Management Articles</h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <a class="sub__link" href="#">View Article</a>
+                  </div>
+                </li>
+                <li class="browse__item">
+                  <img src="images/animal7.png" alt="Cat" />
+                  <div class="articles__content">
+                    <h3 class="sub__title">Field Study Articles</h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <a class="sub__link" href="#">View Article</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="articles__latest">
+              <h2 class="browse__title">Latest Articles</h2>
+              <div class="onther-line"></div>
+              <ul class="latest__list">
+                <li class="latest__item">
+                  <img src="images/area9.png" alt="nil-lake" />
+                  <div class="articles__content">
+                    <h3>
+                      <a href="articles/cat-article_1.html"
+                        >Lorem ipsum, dolor sit amet consectetur .</a
+                      >
+                    </h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <div class="information">
+                      <time class="information__time" datetime="2026-01-06"
+                        >Jan 6 2026</time
+                      >
+                      <a
+                        class="information__link"
+                        href="articles/cat-article_1.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="latest__item">
+                  <img src="images/animal8.jpg" alt="pirana" />
+                  <div class="articles__content">
+                    <h3>
+                      <a href="articles/cat-article_1.html"
+                        >Lorem ipsum, dolor sit amet consectetur .</a
+                      >
+                    </h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <div class="information">
+                      <time class="information__time" datetime="2026-01-06"
+                        >Jan 6 2026</time
+                      >
+                      <a
+                        class="information__link"
+                        href="articles/cat-article_1.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="latest__item">
+                  <img src="images/area1.png" alt="happy-forst" />
+                  <div class="articles__content">
+                    <h3>
+                      <a href="articles/cat-article_1.html"
+                        >Lorem ipsum, dolor sit amet consectetur .</a
+                      >
+                    </h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <div class="information">
+                      <time class="information__time" datetime="2026-01-06"
+                        >Jan 6 2026</time
+                      >
+                      <a
+                        class="information__link"
+                        href="articles/cat-article_1.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="latest__item">
+                  <img src="images/area4.jpg" alt="himalia" />
+                  <div class="articles__content">
+                    <h3>
+                      <a href="articles/cat-article_1.html"
+                        >Lorem ipsum, dolor sit amet consectetur .</a
+                      >
+                    </h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <div class="information">
+                      <time class="information__time" datetime="2026-01-06"
+                        >Jan 6 2026</time
+                      >
+                      <a
+                        class="information__link"
+                        href="articles/cat-article_1.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="latest__item">
+                  <img src="images/area7.png" alt="signi-mountens" />
+                  <div class="articles__content">
+                    <h3>
+                      <a href="articles/cat-article_1.html"
+                        >Lorem ipsum, dolor sit amet consectetur .</a
+                      >
+                    </h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <div class="information">
+                      <time class="information__time" datetime="2026-01-06"
+                        >Jan 6 2026</time
+                      >
+                      <a
+                        class="information__link"
+                        href="articles/cat-article_1.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="latest__item">
+                  <img src="images/animal6.png" alt="Leopart(H/W)" />
+                  <div class="articles__content">
+                    <h3>
+                      <a href="articles/cat-article_1.html"
+                        >Lorem ipsum, dolor sit amet consectetur .</a
+                      >
+                    </h3>
+                    <p class="sub__paraghraph">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <div class="information">
+                      <time class="information__time" datetime="2026-01-06"
+                        >Jan 6 2026</time
+                      >
+                      <a
+                        class="information__link"
+                        href="articles/cat-article_1.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="top">
+            <div class="adv__article">
+              <div class="adv__first">
+                <h2 class="adv__title">JOIN US</h2>
+                <p class="adv__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit???
+                </p>
+                <a class="adv__link" href="#">Join Now</a>
+              </div>
+              <div class="adv__second">
+                <h3 class="categories">CATEGORIES</h3>
+                <ul class="sugestion">
+                  <li class="sugestion__item">
+                    <a
+                      class="sugestion__link"
+                      href="articles/tiger-article_1.html"
+                      >&gt; Tigers</a
+                    >
+                  </li>
+                  <li class="sugestion__item">
+                    <a
+                      class="sugestion__link"
+                      href="articles/liones-article.html"
+                      >&gt; Strong-Mother</a
+                    >
+                  </li>
+                  <li class="sugestion__item">
+                    <a
+                      class="sugestion__link"
+                      href="articles/wolf_article_1.html"
+                      >&gt; Wolves-life</a
+                    >
+                  </li>
+                  <li class="sugestion__item">
+                    <a
+                      class="sugestion__link"
+                      href="articles/cat-article_1.html"
+                      >&gt; Home-Cats</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="middle">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__title">ANIMALS</h3>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+              quod ut, dicta exercitationem aperiam cupiditate voluptates atque
+              molestiae ratione placeat temporibus voluptatem.
+            </p>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">EMAIL</h3>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <form class="footer__form" action="#" method="POST">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder="Enter Email..."
+                required
+                aria-label="Email Address" />
+              <button type="submit" class="footer__submit">subscribe</button>
+            </form>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">SITE LINKS</h3>
+            <ul class="footer__point">
+              <li class="point__item">
+                <a class="point__link" href="#">Help &amp; Support</a>
+              </li>
+              <li class="point__item">
+                <a class="point__link" href="#">Privacy Policy</a>
+              </li>
+              <li class="point__item">
+                <a class="point__link" href="about.html">About Us</a>
+              </li>
+              <li class="point__item">
+                <a class="point__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">JOIN US</h3>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              delectus aspernatur rem!
+            </p>
+            <a class="footer__link" href="#">Join Now</a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          Copyright &copy; 2026, All Rights Reserved
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,181 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Earth Chronicle</title>
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicons/favicon-96x96.png">
-</head>
-<body>
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicons/favicon-96x96.png" />
+  </head>
+  <body>
     <!-- -------------------------| header |--------------------------- -->
     <header>
-        <div class="middle nav-inner"> 
-            <!-- -------------------------| logo-website |--------------------------- -->
-            <a class="logo-site" href="#">EarthChronicle News♣</a>
-            <!-- -------------------------| socials-icon |--------------------------- -->
-            <div class="socials">
-                <a class="socials__links" href="#">
-                    <i class="icon-telegram"></i>
-                </a>
-                <a class="socials__links" href="#">
-                    <i class="icon-linkedin"></i>
-                </a>
-                <a class="socials__links" href="#">
-                    <i class="icon-instagram"></i>
-                </a>
-                <a class="socials__links" href="#">
-                    <i class="icon-github"></i>
-                </a>
-            </div>
-            <!-- -------------------------| navigation-menu |--------------------------- -->
-            <nav class="menu">
-                <!-- -------------------------| navigation-hamburger-menu |--------------------------- -->
-                <label
-                    class="menu__hamburger"
-                    for="menu-toggle"
-                    aria-label="Toggle Navigation">
-                    <input type="checkbox" id="menu-toggle" class="hamburger__input" />
-                </label>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link we-are-in-page" href="index.html">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="about.html">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link details" href="articles.html">Articles</a>
-                        <ul class="menu__bench__list">
-                            <li class="bench__item"><a class="bench__link" href="environmental-article.html">Environmental Articles</a></li>
-                            <li class="bench__item"><a class="bench__link" href="">Watershed Management Articles</a></li>
-                            <li class="bench__item"><a class="bench__link" href="">Field Study Articles</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+      <div class="middle nav-inner">
+        <!-- -------------------------| logo-website |--------------------------- -->
+        <a class="logo-site" href="index.html">EarthChronicle News♣</a>
+        <!-- -------------------------| socials-icon |--------------------------- -->
+        <div class="socials">
+          <a class="socials__links" href="#" aria-label="Telegram">
+            <i class="icon-telegram"></i>
+          </a>
+          <a class="socials__links" href="#" aria-label="LinkedIn">
+            <i class="icon-linkedin"></i>
+          </a>
+          <a class="socials__links" href="#" aria-label="Instagram">
+            <i class="icon-instagram"></i>
+          </a>
+          <a class="socials__links" href="#" aria-label="GitHub">
+            <i class="icon-github"></i>
+          </a>
         </div>
+        <!-- -------------------------| navigation-menu |--------------------------- -->
+        <nav class="menu" aria-label="Main Navigation">
+          <!-- -------------------------| navigation-hamburger-menu |--------------------------- -->
+          <label
+            class="menu__hamburger"
+            for="menu-toggle"
+            aria-label="Toggle Navigation">
+            <input type="checkbox" id="menu-toggle" class="hamburger__input" />
+          </label>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link we-are-in-page" href="index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link details" href="articles.html">Articles</a>
+              <ul class="menu__bench__list">
+                <li class="bench__item">
+                  <a class="bench__link" href="environmental-article.html"
+                    >Environmental Articles</a
+                  >
+                </li>
+                <li class="bench__item">
+                  <a class="bench__link" href="#"
+                    >Watershed Management Articles</a
+                  >
+                </li>
+                <li class="bench__item">
+                  <a class="bench__link" href="#">Field Study Articles</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- -------------------------| main-index |--------------------------- -->
     <main class="index">
-        <!-- -------------------------| general-hero-classes (between index and about)|--------------------------- -->
-        <section class="hero">
-            <div class="middle">
-                <div class="hero__information">
-                    <a class="hero__link" href="#">PARENT</a>
-                    <h1 class="hero__title">SOME ANIMALS NEWS</h1>
-                    <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Possimus rerum
-                    officia quibusdam mollitia deserunt animi soluta laudantium. Quam
-                    sapiente a dolorum magnam necessitatibus quis tempore facere totam
-                    Dolor, sequi distinctio!</p>
-                    <a class="hero__read-more" href="">READ MORE</a>
-                </div>
-            </div>
-        </section>
-        <!-- -------------------------| news |--------------------------- -->
-        <section class="news">
-            <div class="middle">
-                <h2 class="news__title">TOP NEWS</h2>
-                <ul class="news__list">
+      <!-- -------------------------| general-hero-classes (between index and about)|--------------------------- -->
+      <section class="hero">
+        <div class="middle">
+          <div class="hero__information">
+            <a class="hero__link" href="#">PARENT</a>
+            <h1 class="hero__title">SOME ANIMALS NEWS</h1>
+            <p class="hero__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.Possimus
+              rerum officia quibusdam mollitia deserunt animi soluta laudantium.
+              Quam sapiente a dolorum magnam necessitatibus quis tempore facere
+              totam Dolor, sequi distinctio!
+            </p>
+            <a class="hero__read-more" href="#">READ MORE</a>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------| news |--------------------------- -->
+      <section class="news">
+        <div class="middle">
+          <h2 class="news__title">TOP NEWS</h2>
+          <ul class="news__list">
+            <li class="news__card">
+              <img
+                class="news__img"
+                src="images/animal1.png"
+                alt="Cat in nature" />
+              <div class="news__content">
+                <a class="category-btn c-3-btn" href="#">CAT</a>
+                <h3 class="news__title">
+                  <a class="news__link" href="articles/cat-article_1.html"
+                    >Lorem ipsum, dolor sit amet consectetur .</a
+                  >
+                </h3>
+                <p class="news__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis natus maxime eum magni corrupti aliquam, voluptatum
+                  quisquam id fugiat commodi nisi reiciendis quod repudiandae,
+                  neque repellat perspiciatis porro consectetur accusamus.
+                </p>
+              </div>
+            </li>
+            <li class="news__card">
+              <div class="news__content">
+                <a class="category-btn c-6-btn" href="#">Niagara Fall-Wather</a>
+                <h3 class="news__title news__different">
+                  <a class="news__link" href="articles/niagara-article.html"
+                    >Lorem ipsum, dolor sit amet consectetur .</a
+                  >
+                </h3>
+                <p class="news__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis natus maxime eum magni corrupti aliquam, voluptatum
+                  quisquam id fugiat commodi nisi reiciendis quod repudiandae,
+                  neque repellat perspiciatis porro consectetur accusamus.
+                </p>
+              </div>
+            </li>
+            <li class="news__card">
+              <img
+                class="news__img"
+                src="images/animal2.jpg"
+                alt="Wolf in the wild" />
+              <div class="news__content">
+                <a class="category-btn c-4-btn" href="#">Wolf</a>
+                <h3 class="news__title">
+                  <a class="news__link" href="articles/wolf_article_1.html"
+                    >Lorem ipsum, dolor sit amet consectetur .</a
+                  >
+                </h3>
+                <p class="news__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis natus maxime eum magni corrupti aliquam, voluptatum
+                  quisquam id fugiat commodi nisi reiciendis quod repudiandae,
+                  neque repellat perspiciatis porro consectetur accusamus.
+                </p>
+              </div>
+            </li>
+            <li class="news__card">
+              <div class="news__content">
+                <a class="category-btn c-2-btn" href="#">Lion</a>
+                <h3 class="news__title">
+                  <a class="news__link" href="articles/liones-article.html"
+                    >Lorem ipsum, dolor sit amet consectetur .</a
+                  >
+                </h3>
+                <p class="news__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis natus maxime eum magni corrupti aliquam, voluptatum
+                  quisquam id fugiat commodi nisi reiciendis quod repudiandae,
+                  neque repellat perspiciatis porro consectetur accusamus.
+                </p>
+              </div>
+              <img
+                class="news__img"
+                src="images/animal3.jpg"
+                alt="Wildlife in jungle" />
+            </li>
+            <li class="news__card">
+              <img
+                class="news__img"
+                src="images/area8.png"
+                alt="African landscape" />
+              <div class="news__content">
+                <a class="category-btn c-4-btn" href="#">Africa</a>
+                <h3 class="news__title">
+                  <a class="news__link" href="articles/africa-article.html"
+                    >Lorem ipsum, dolor sit amet consectetur .</a
+                  >
+                </h3>
+                <p class="news__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis natus maxime eum magni corrupti aliquam, voluptatum
+                  quisquam id fugiat commodi nisi reiciendis quod repudiandae,
+                  neque repellat perspiciatis porro consectetur accusamus.
+                </p>
+              </div>
+            </li>
 
-                    <li class="news__card">
-                        <img class="news__img" src="images/animal1.png" alt="Cat">
-                        <div class="news__content">
-                        <span class="category-btn c-3-btn">CAT</span>
-                        <h3 class="news__title"><a class="news__link" href="articles/cat-article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                        <p class="news__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis natus maxime eum magni corrupti aliquam, voluptatum quisquam id fugiat commodi nisi reiciendis quod repudiandae, neque repellat perspiciatis porro consectetur accusamus.</p>
-                        </div>
-                    </li>
-                    <li class="news__card">
-                        <div class="news__content">
-                        <span class="category-btn c-6-btn">Niagara Fall-Wather</span>
-                        <h3 class="news__title news__different"><a class="news__link" href="articles/niagara-article.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                        <p class="news__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis natus maxime eum magni corrupti aliquam, voluptatum quisquam id fugiat commodi nisi reiciendis quod repudiandae, neque repellat perspiciatis porro consectetur accusamus.</p>
-                        </div>
-                    </li>
-                    
-                    <li class="news__card">
-                        <img src="images/animal2.jpg" alt="Wolf">
-                        <div class="news__content">
-                        <span class="category-btn c-4-btn">Wolf</span>
-                        <h3 class="news__title"><a class="news__link" href="articles/wolf_article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                        <p class="news__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis natus maxime eum magni corrupti aliquam, voluptatum quisquam id fugiat commodi nisi reiciendis quod repudiandae, neque repellat perspiciatis porro consectetur accusamus.</p>
-                        </div>
-                    </li>
-                    <li class="news__card">
-                        <div class="news__content">
-                        <span class="category-btn c-2-btn">Lion</span>
-                        <h3 class="news__title"><a class="news__link" href="articles/liones-article.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                        <p class="news__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis natus maxime eum magni corrupti aliquam, voluptatum quisquam id fugiat commodi nisi reiciendis quod repudiandae, neque repellat perspiciatis porro consectetur accusamus.</p>
-                        </div>
-                        <img src="images/animal3.jpg" alt="how-to-live-at-jungle">
-                    </li>
-                    <li class="news__card">
-                        <img src="images/area8.png" alt="Africa">
-                        <div class="news__content">
-                        <span class="category-btn c-4-btn">Africa</span>
-                        <h3 class="news__title"><a class="news__link" href="articles/africa-article.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                        <p class="news__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis natus maxime eum magni corrupti aliquam, voluptatum quisquam id fugiat commodi nisi reiciendis quod repudiandae, neque repellat perspiciatis porro consectetur accusamus.</p>
-                        </div>
-                    </li>
-
-                    <li class="news__card">
-                        <div class="news__content">
-                        <span class="category-btn c-4-btn">Tiger</span>
-                        <h3 class="news__title news__different"><a class="news__link" href="articles/tiger-article_1.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                        <p class="news__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis natus maxime eum magni corrupti aliquam, voluptatum quisquam id fugiat commodi nisi reiciendis quod repudiandae, neque repellat perspiciatis porro consectetur accusamus.</p>
-                        </div>
-                    </li>
-                    <li class="news__card">
-                        <div class="news__content">
-                        <span class="category-btn c-5-btn">FOX</span>
-                        <h3 class="news__title"><a class="news__link" href="articles/oreng-fox.html">Lorem ipsum, dolor sit amet consectetur .</a></h3>
-                        <p class="news__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis natus maxime eum magni corrupti aliquam, voluptatum quisquam id fugiat commodi nisi reiciendis quod repudiandae, neque repellat perspiciatis porro consectetur accusamus.</p>
-                        </div>
-                        <img class="news__img" src="images/animal5.jpg" alt="Fox">
-                    </li>
-                </ul>
-
-            </div>
-            <a class="scroll" href="#">
-                <div class="elevator">
-                    <i>↑</i>
-                </div>
-            </a>
-        </section>
+            <li class="news__card">
+              <div class="news__content">
+                <a class="category-btn c-4-btn" href="#">Tiger</a>
+                <h3 class="news__title news__different">
+                  <a class="news__link" href="articles/tiger-article_1.html"
+                    >Lorem ipsum, dolor sit amet consectetur .</a
+                  >
+                </h3>
+                <p class="news__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis natus maxime eum magni corrupti aliquam, voluptatum
+                  quisquam id fugiat commodi nisi reiciendis quod repudiandae,
+                  neque repellat perspiciatis porro consectetur accusamus.
+                </p>
+              </div>
+            </li>
+            <li class="news__card">
+              <div class="news__content">
+                <a class="category-btn c-5-btn" href="#">FOX</a>
+                <h3 class="news__title">
+                  <a class="news__link" href="articles/oreng-fox.html"
+                    >Lorem ipsum, dolor sit amet consectetur .</a
+                  >
+                </h3>
+                <p class="news__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis natus maxime eum magni corrupti aliquam, voluptatum
+                  quisquam id fugiat commodi nisi reiciendis quod repudiandae,
+                  neque repellat perspiciatis porro consectetur accusamus.
+                </p>
+              </div>
+              <img
+                class="news__img"
+                src="images/animal5.jpg"
+                alt="Orange fox" />
+            </li>
+          </ul>
+        </div>
+        <a class="scroll" href="#" aria-label="Scroll to top">
+          <div class="elevator">
+            <i>↑</i>
+          </div>
+        </a>
+      </section>
     </main>
     <!------------------------------------| footer |------------------------------------->
-    <footer> 
-        <div class="middle">
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <h3 class="footer__title">ANIMALS</h3>
-                    <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quod ut, dicta exercitationem aperiam cupiditate voluptates atque molestiae ratione placeat temporibus voluptatem.</p>
-                </li>
-                <li class="footer__item">
-                    <h3 class="footer__title">EMAIL</h3>
-                    <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <input class="email" type="email" placeholder="Enter Email...">
-                    <input type="submit" value="subscribe">
-                </li>
-                <li class="footer__item">
-                    <h3 class="footer__title">SITE LINKS</h3>
-                    <ul class="footer__point">
-                        <li class="point__item"><a class="point__link" href="#">Help & Support</a></li>
-                        <li class="point__item"><a class="point__link" href="#">Privacy Policy</a></li>
-                        <li class="point__item"><a class="point__link" href="about.html">About Us</a></li>
-                        <li class="point__item"><a class="point__link" href="#">Contact</a></li>
-                    </ul>
-                </li>
-                <li class="footer__item">
-                    <h3 class="footer__title">JOIN US</h3>
-                    <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus aspernatur rem!</p>
-                    <a class="footer__link" href="#">Join Now</a>
-                </li>
+    <footer>
+      <div class="middle">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__title">ANIMALS</h3>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+              quod ut, dicta exercitationem aperiam cupiditate voluptates atque
+              molestiae ratione placeat temporibus voluptatem.
+            </p>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">EMAIL</h3>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <form class="footer__form" action="#" method="POST">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder="Enter Email..."
+                required
+                aria-label="Email Address" />
+              <button type="submit" class="footer__submit">subscribe</button>
+            </form>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">SITE LINKS</h3>
+            <ul class="footer__point">
+              <li class="point__item">
+                <a class="point__link" href="#">Help & Support</a>
+              </li>
+              <li class="point__item">
+                <a class="point__link" href="#">Privacy Policy</a>
+              </li>
+              <li class="point__item">
+                <a class="point__link" href="about.html">About Us</a>
+              </li>
+              <li class="point__item">
+                <a class="point__link" href="#">Contact</a>
+              </li>
             </ul>
-            <div class="footer__copyright">Copyright &copy; 2026, All Rights Reserved</div>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">JOIN US</h3>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              delectus aspernatur rem!
+            </p>
+            <a class="footer__link" href="#">Join Now</a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          Copyright &copy; 2026, All Rights Reserved
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
